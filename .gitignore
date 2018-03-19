@@ -1,0 +1,9 @@
+# File Removed from the github #
+##----------------------------##
+/inputs/*
+#Inputs/Forcing_Hydro/JFRE_hydro.nc
+/SETas_Output_Folder/*
+/Calibration/*
+/*.nc
+#/Inputs/Forcings/*
+#/MandM/FG_connect.nc
