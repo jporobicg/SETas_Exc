@@ -224,7 +224,7 @@ flagseperatePWN 0 PWN, PWNj are: 1 = seperate groups (or single pool), 0 = age s
 
 flagrecruitFPS 3  3
 flagrecruitFVS 3  3
-flagrecruitFVT 3  3
+flagrecruitFVT 1  3
 flagrecruitFDS 3  3
 flagrecruitSHD 12  3
 flagrecruitSB  12  3
@@ -270,7 +270,7 @@ flaglocalrecruitSB 1 1
 flaglocalrecruitPIN 1 1
 flaglocalrecruitWHB 1 1
 flaglocalrecruitWHT 1 1
-flaglocalrecruitCEP   1
+flaglocalrecruitCEP   1             
 flaglocalrecruitPWN   1                                                                        1                                                           1
 
 # Flag indicating whether the vertebrate group bearslive young (0 = no, 1 = yes)
@@ -3261,13 +3261,13 @@ KHTI 1.5 Factor handother deep demersal time increased by for relres<thresh2 1.5
 # The order of the prey groups is defined by your functional group input file.
 ##     FPS FVS FVT FDS SHD SB PIN WHB WHT CEP BFS BFF BG BMD BML BMS PWN ZL BD MA MB SG BC ZG PL DF PS ZM ZS PB BB BO DL DR DC DLsed DRsed DCsed
 pPREY1FVS1  38
-0.02 0 0 0.01 0 0 0 0 0 0.05 0.0075 0.007 0.02 0.001 0 0.001 0.05 0.15 0.008 0 0 0 0.018 0.005 0.02 0 0 0.01 0 0 0 0 0 0 0 0 0 0
+0.02 0 0 0.01 0 0 0 0 0 0.05 0.0075 0.007 0.02 0.001 0 0.001 0.05 0.15 0.008 0 0 0 0.018 0.005 0.02 0 0.001 0.01 0 0 0 0 0 0 0 0 0 0
 pPREY2FVS1  38
-0.001 0 0 0.002 0 0 0 0 0 0.05 0.0075 0.007 0.02 0.001 0 0.001 0.05 0.15 0.008 0 0 0 0.018 0.005 0.02 0 0 0.01 0 0 0 0 0 0 0 0 0 0
+0.001 0 0 0.002 0 0 0 0 0 0.05 0.0075 0.007 0.02 0.001 0 0.001 0.05 0.15 0.008 0 0 0 0.018 0.005 0.02 0 0.001 0.01 0 0 0 0 0 0 0 0 0 0
 pPREY1FVS2  38
-0.001 0.001 0 0.005 0 0 0 0 0 0.05 0.0075 0.007 0.02 0.001 0 0.001 0.05 0.15 0.008 0 0 0 0.018 0.005 0.02 0 0 0.01 0 0 0 0 0 0 0 0 0 0
+0.001 0.001 0 0.005 0 0 0 0 0 0.05 0.0075 0.007 0.02 0.001 0 0.001 0.05 0.15 0.008 0 0 0 0.018 0.005 0.02 0 0.001 0.01 0 0 0 0 0 0 0 0 0 0
 pPREY2FVS2  38
-5e-04 0 0 0.001 0 0 0 0 0 0.05 0.0075 0.007 0.02 0.001 0 0.001 0.05 0 0.008 0 0 0 0.018 0.005 0.02 0 0 0.01 0 0 0 0 0 0 0 0 0 0
+5e-04 0 0 0.001 0 0 0 0 0 0.05 0.0075 0.007 0.02 0.001 0 0.001 0.05 0 0.008 0 0 0 0.018 0.005 0.02 0 0.001 0.01 0 0 0 0 0 0 0 0 0 0
 pPREY1FVT1  38
 0.2 0.04 0 0 0 0 0 0 0 0.04 0 0 0 0.0015 0 0.0015 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 pPREY2FVT1  38
@@ -3279,15 +3279,15 @@ pPREY2FVT2  38
 pPREY1FDS1  38
 0.05 0 0 0.025 0 0 0 0 0 0.001 1e-04 0.007 0.002 0.01137931 1.5e-05 0.01137931 0.05 0.3 0.05 1e-06 0 1e-07 0.007637931 0.001 0 0 0 0.0275 0 0 0 0 0.002 5e-04 1e-04 0 0 0
 pPREY1FPS1  38
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0 0 0 0 0 0 0.2 0 0 0.1 0.05 0 0 0 0.2 0.001 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0 0 0 0 0 0 0.2 0 0.1 0.1 0.05 0 0 0 0.2 0.001 0 0 0 0
 pPREY2FPS1  38
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0 0 0 0 0 0 0.2 0 0 0.1 0.05 0 0 0 0.2 0.001 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0 0 0 0 0 0 0.2 0 0.1 0.1 0.05 0 0 0 0.2 0.001 0 0 0 0
 pPREY1FPS2  38
-0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0.2 0 0 0 0 0 0 0.2 0.003 0 0.1 0.05 0 0 0 0.2 0.001 0 0 0 0
+0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0.2 0 0 0 0 0 0 0.2 0.003 0.1 0.1 0.05 0 0 0 0.2 0.001 0 0 0 0
 pPREY2FPS2  38
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0.2 0 0 0 0 0 0 0.2 0.003 0 0.1 0.05 0 0 0 0.2 0.001 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0.2 0 0 0 0 0 0 0.2 0.003 0.1 0.1 0.05 0 0 0 0.2 0.001 0 0 0 0
 pPREY2FDS1  38
-5e-04 0 0 0.005 0 0 0 0 0 0.001 1e-04 0.007 0.002 0.01137931 1.5e-05 0.01137931 0.05 0.3 0.05 1e-06 0 1e-07 0.007637931 0.001 0 0 0 0.0275 0 0 0 0 0.002 5e-04 1e-04 0 0 0
+5e-04 0 0 0.005 0 0 0 0 0 0.001 1e-04 0.007 0.002 0.01137931 1.5e-05 0.01137931 0.05 0.3 0.05 1e-06 0 1e-07 0.007637931 0.001 0 0 0.005 0.0275 0 0 0 0 0.002 5e-04 1e-04 0 0 0
 pPREY1FDS2  38
 0.1 0 0 0.025 0 0 0 0 0 0.05 0.00015 0.008 0.0016 0.0137931 0.0004625 0.0137931 0.05 0.1 0.005 1e-05 0 1e-06 0.009137931 0.001 0 0 0 0.0035 0 0 0 0 0.002 5e-04 1e-04 0 0 0
 pPREY2FDS2  38
@@ -3365,9 +3365,9 @@ pPREY1CEP1  38
 pPREY2CEP1  38
 0.0025 4e-04 1e-04 0.00016 0 0 0 0 0 1e-04 0 0 0 0 0 0 0 0.04 0 0 0 0 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0 0
 pPREY1CEP2  38
-0.03 1e-04 0.001 5e-04 0 0 0 0 0 0.00025 0 0 0 0 0 0 0 0.03 0 0 0 0 0 0 0 0 0 0.008 0 0 0 0 0 0 0 0 0 0
+0.03 1e-04 0.001 5e-04 0 0 0 0 0 0.00025 0 0 0 0 0 0 0 0.03 0 0 0 0 0 0 0 0 0.001 0.008 0 0 0 0 0 0 0 0 0 0
 pPREY2CEP2  38
-0.03 1e-04 0.001 5e-04 0 0 0 0 0 0.00025 0 0 0 0 0 0 0 0.03 0 0 0 0 0 0 0 0 0 0.008 0 0 0 0 0 0 0 0 0 0
+0.03 1e-04 0.001 5e-04 0 0 0 0 0 0.00025 0 0 0 0 0 0 0 0.03 0 0 0 0 0 0 0 0 0.001 0.008 0 0 0 0 0 0 0 0 0 0
 pPREY1PWN1  38
 0 0 0 0 0 0 0 0 0 0 0.005 0.005 0.005 0.005 0 0.005 0 0.07 0.005 0 0 0 0.005 0 0.4 0 0.2 0.05 0 0 0 0.001 0.1 0.01 0.05 0.05 0 0
 pPREY2PWN1  38
@@ -4824,7 +4824,7 @@ KDENR_FDS       1
 3E+8
 
 KDENR_SHD       1
-1
+2
 
 KDENR_SB        1
 12
@@ -4889,9 +4889,9 @@ Rbeta_CEP       2.00E+12  Beta in Ricker for cephalopods
 Rbeta_PWN       2.00E+12  Beta in Ricker for prawns
 
 # Beverton-Holt recruitment
-BHalpha_FPS      2.00E+10  Alpha in Beverton-Holt for small planktivores
+BHalpha_FPS      2.00E+9  Alpha in Beverton-Holt for small planktivores
 BHalpha_FVS      9.0E+11  Alpha in Beverton-Holt for shallow piscivores  (5.00E+09)
-BHalpha_FVT      5.0E+10   Alpha in Beverton-Holt for tropical piscivores
+BHalpha_FVT      5.0E+06   Alpha in Beverton-Holt for tropical piscivores
 BHalpha_FDS      5.00E+09  Alpha in Beverton-Holt for shallow demersals
 BHalpha_SHD      9.00E+08  Alpha in Beverton-Holt for demersal sharks
 BHalpha_SB       900000    Alpha in Beverton-Holt for seabirds
@@ -4904,7 +4904,7 @@ BHalpha_PWN      9.00E+11  Alpha in Beverton-Holt for demersal prawns
 
 BHbeta_FPS       3.00E+08  Beta in Beverton-Holt for small planktivores
 BHbeta_FVS       1.00E+10  Beta in Beverton-Holt for shallow piscivores
-BHbeta_FVT       5E+8  Beta in Beverton-Holt for tropical piscivores
+BHbeta_FVT       1.20E+11  Beta in Beverton-Holt for tropical piscivores
 BHbeta_FDS       1.00E+10  Beta in Beverton-Holt for shallow demersals
 BHbeta_SHD       2.00E+12  Beta in Beverton-Holt for demersal sharks
 BHbeta_SB        10500000  Beta in Beverton-Holt for seabirds

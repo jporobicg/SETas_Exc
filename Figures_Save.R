@@ -14,7 +14,7 @@ groups.csv <-  'SETasGroupsDem.csv'
 curr.f     <- 'outputSETASBiomIndx.txt'
 fg    <- read.csv(groups.csv)$Code
 t.out <- read.csv(paste(folder1, curr.f, sep = ''),sep = ' ')[, c(1 : length(fg))]
-r.out <- read.csv(paste(folder1, curr.f, sep = ''),sep = ' ')[, c(1, (length(fg) + 3) : (length(fg) * 2 + 9))]
+r.out <- read.csv(paste(folder1, curr.f, sep = ''),sep = ' ')[, c(1, (length(fg) + 3) : (length(fg) * 2 + 3))]
 t.out <- melt(t.out, id.vars = 'Time')
 r.out <- melt(r.out, id.vars = 'Time')
 ## ploting

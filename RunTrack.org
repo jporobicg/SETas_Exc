@@ -47,3 +47,61 @@ prueba
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6320
   - Run used :  /usr/local/bin/atlantisMerged -i INIT_VMPA_Jan2015.nc 0 -o outputSETAS.nc -r VMPA_setas_run_fishing_F_Trunk.prm -f VMPA_setas_force_fish_Trunk.prm -p VMPA_setas_physics.prm -b VMPA_setas_biol_fishing_Trunk.prm -h harvest_stripped.prm -s SETasGroupsDem.csv -q SETasFisheries.csv -d SETas_Output_Folder
+  - Commit Githhub : 
+
+**  Input
+*** Mortality
+*** Pprey
+**** FVS
+***** on PS
+- from : 0.0001
+- to : 0
+**** FPS
+- from : 0.1 (all)
+- to : 0
+**** CEP
+***** on PS
+- from 0.001 (adl on adl and juv)
+- to : 0
+**** FDS
+***** on PS
+- from : 0.005 (Juv - adl)
+- to : 0
+*** Mum
+*** Clearance
+*** Lysis
+*** Eddy scale
+*** Light saturation and absorption
+*** Recruitment
+**** FPS
+- Alpha
+- from: 2e9
+- to: 2e10
+**** FVS
+- Alpha
+- from : 9e+11
+- to : 5e+11
+**** FVT
+- Changed model
+- from : constant (1) 8000
+- to Beverton-Holt
+- Alpha 5e10
+- beta 5e8
+**** SHD
+- from : 2
+- to : 1 (just the female so,  the half of the population reproduce)
+*** Efficiency
+*** Initial conditions
+*** Harvest
+** Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20180702175351
+[[file:/home/demiurgo/Documents/2017/Calibration_SETas/Model/SETas_model_Trunk_Stripped/Calibration/Figures/20180702175351.png]]
+* Run PC-Demiurgo 20180702181436
+  - Run start: 2018-07-02 18:14:36
+  - Run end: 2018-07-02 18:20:31
+  - log file : [[file:Calibration/20180702182031.bak][Backupfile]]
+  - OS : Ubuntu 14.04.5 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6320
+  - Run used :  /usr/local/bin/atlantisMerged -i INIT_VMPA_Jan2015.nc 0 -o outputSETAS.nc -r VMPA_setas_run_fishing_F_Trunk.prm -f VMPA_setas_force_fish_Trunk.prm -p VMPA_setas_physics.prm -b VMPA_setas_biol_fishing_Trunk.prm -h harvest_stripped.prm -s SETasGroupsDem.csv -q SETasFisheries.csv -d SETas_Output_Folder
