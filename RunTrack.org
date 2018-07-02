@@ -34,3 +34,16 @@ prueba
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6313
   - Run used :  /usr/local/bin/atlantisMerged -i INIT_VMPA_Jan2015.nc 0 -o outputSETAS.nc -r VMPA_setas_run_fishing_F_Trunk.prm -f VMPA_setas_force_fish_Trunk.prm -p VMPA_setas_physics.prm -b VMPA_setas_biol_fishing_Trunk.prm -h harvest_stripped.prm -s SETasGroupsDem.csv -q SETasFisheries.csv -d SETas_Output_Folder
+  - Commit Githhub : new attepmts
+** Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20180320114257
+[[file:/home/demiurgo/Documents/2017/Calibration_SETas/Model/SETas_model_Trunk_Stripped/Calibration/Figures/20180320114257.png]]
+* Run PC-Demiurgo 20180702175351
+  - Run start: 2018-07-02 17:53:51
+  - Run end: 2018-07-02 18:02:28
+  - log file : [[file:Calibration/20180702180228.bak][Backupfile]]
+  - OS : Ubuntu 14.04.5 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6320
+  - Run used :  /usr/local/bin/atlantisMerged -i INIT_VMPA_Jan2015.nc 0 -o outputSETAS.nc -r VMPA_setas_run_fishing_F_Trunk.prm -f VMPA_setas_force_fish_Trunk.prm -p VMPA_setas_physics.prm -b VMPA_setas_biol_fishing_Trunk.prm -h harvest_stripped.prm -s SETasGroupsDem.csv -q SETasFisheries.csv -d SETas_Output_Folder

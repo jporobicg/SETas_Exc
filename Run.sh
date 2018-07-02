@@ -16,9 +16,9 @@ echo "  A Copy of the Log file as been made  "
 echo "++++++++++++++++++++++++++++++++++++++++"
 datEnd="$(date +'%Y%m%d%H%M%S')"
 dateend="$(date +'%Y-%m-%d %H:%M:%S')"
-cp -a SETas_Output_Folder/outputJFREAnnualAgeBiomIndx.txt Calibration/BioAge$datEnd.bak
-cp -a SETas_Output_Folder/outputJFREBiomIndx.txt Calibration/BioTot$datEnd.bak
-cp -a SETas_Output_Folder/outputJFRE.nc Calibration/Ncout$datEnd.nc
+cp -a SETas_Output_Folder/outputSETASAnnualAgeBiomIndx.txt Calibration/BioAge$datEnd.bak
+cp -a SETas_Output_Folder/outputSETASBiomIndx.txt Calibration/BioTot$datEnd.bak
+cp -a SETas_Output_Folder/outputSETAS.nc Calibration/Ncout$datEnd.nc
 if [ $(ls Calibration/*.nc | wc -l) -gt 4 ];
 then
     rm "$(ls -t Calibration/*.nc | tail -1)"
