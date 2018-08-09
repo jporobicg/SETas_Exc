@@ -47,3 +47,38 @@ prueba
   - Bash Version : 4.3.11(1)-release
   - Atlantis Version : #Atlantis2 Updated to Version 6320
   - Run used :  /usr/local/bin/atlantisMerged -i INIT_VMPA_Jan2015.nc 0 -o outputSETAS.nc -r VMPA_setas_run_fishing_F_Trunk.prm -f VMPA_setas_force_fish_Trunk.prm -p VMPA_setas_physics.prm -b VMPA_setas_biol_fishing_Trunk.prm -h harvest_stripped.prm -s SETasGroupsDem.csv -q SETasFisheries.csv -d SETas_Output_Folder
+  - Commit Githhub : **  Input
+| Calibration | FG  | Paramter            | Change | Old value | newValue | Reason                                                                   |
+|-------------+-----+---------------------+--------+-----------+----------+--------------------------------------------------------------------------|
+|           1 | CEP | Pprey               | Dec    |     0.001 |        0 | They are eating Small phyto                                              |
+|           1 | CEP | Pprey               | Dec    |    0.0025 |    0.001 | Juveniles are eaiting too much small pelagic fish                        |
+|           1 | CEP | Pprey               | Dec    |      0.03 |    0.001 | Adults eating too much juveniles small pelagic fish                      |
+|           1 | CEP | Pprey               | Dec    |      0.03 |    0.015 | Adult eating too much adult small fish pelagic                           |
+|           1 | FVT | Pprey               | Dec    |       0.2 |      0.1 | Adult and juvenile eating too much juvenile and adult small pelagic fish |
+|           1 | FVS | Pprey               | Dec    |     0.001 |        0 | predation on small phyto                                                 |
+|           1 | FPS | Recruitment(alpha)  | Inc    |      5e09 |     5e10 | Increase alpha in recruitment BH                                         |
+|           1 | FVT | Recruitment         | Change |  constant | Bev-Holt | Change the model of recruitment                                          |
+|           1 | FVS | Recruitment (alpha) | Dec    |      9e11 |     5e11 | Decrese the recuitment outcome [Control de peaks on the recruitments]    |
+|           1 | FVT | Recruitmen (alpha)  | -      |      5e10 |     5e10 | Initital value                                                           |
+|           1 | FVT | Recruitment (beta)  | -      |       5e8 |      5e8 | initial value                                                            |
+|           1 | SHD | Recruitment         | Dec    |         2 |        1 | just the female so,  the half of the population reproduce                |
+|           1 | FPS | Pprey               | Dec    |       0.1 |        0 | Removing predation on PS                                                 |
+|           1 | FDS | Pprey               | Dec    |     0.005 |        0 | Removing predation on Ps                                                 |
+|           1 | ZL  | Pprey               | Dec    |     2e-05 |        0 | Removing predation on Ps                                                 |
+|           1 | ZG  | Pprey               | Dec    |     1e-04 |        0 | Removing predation on Ps                                                 |
+|           1 | FPS | Pprey               | Dec    |      0.05 |        0 | Removing predation on ZS                                                 |
+|           1 | CEP | mum                 | Dec    |    0.0014 |    0.001 | Controling the explosive growth f this specie                            |
+|           1 | SB  | Pprey               | Dec    |      0.05 |        0 | Decresing consumption od detritus labile                                 |
+|           1 | SB  | Pprey               | Dec    |      0.02 |        0 | Decresing consumption of  DC                                             |
+** Biomasss Plot
+#+CAPTION: Biomass plot for the simulation 20180802095907
+[[file:/home/demiurgo/Documents/2017/Calibration_SETas/Model/SETas_model_Trunk_Stripped/Calibration/Figures/20180802095907.png]]
+* Run PC-Demiurgo 20180809100500
+  - Run start: 2018-08-09 10:05:00
+  - Run end: 2018-08-09 10:31:42
+  - log file : [[file:Calibration/20180809103142.bak][Backupfile]]
+  - OS : Ubuntu 14.04.5 LTS
+  - Compiler version : gcc 4.8
+  - Bash Version : 4.3.11(1)-release
+  - Atlantis Version : #Atlantis2 Updated to Version 6320
+  - Run used :  /usr/local/bin/atlantisMerged -i INIT_VMPA_Jan2015.nc 0 -o outputSETAS.nc -r VMPA_setas_run_fishing_F_Trunk.prm -f VMPA_setas_force_fish_Trunk.prm -p VMPA_setas_physics.prm -b VMPA_setas_biol_fishing_Trunk.prm -h harvest_stripped.prm -s SETasGroupsDem.csv -q SETasFisheries.csv -d SETas_Output_Folder
