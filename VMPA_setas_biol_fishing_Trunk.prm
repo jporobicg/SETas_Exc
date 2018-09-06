@@ -3361,13 +3361,13 @@ pPREYBMD  38
 pPREYBG  38
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.001 0 1e-04 0 0 0 0 0 0 0 0 0 0 0.02 0.01 0 0 0 0
 pPREY1CEP1  38
-0.001 4e-04 1e-04 0.00016 0 0 0 0 0 1e-04 0 0 0 0 0 0 0 0.04 0 0 0 0 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0 0
+0.001 4e-04 1e-04 0.00016 0 0 0 0 0 1e-04 0 0 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0
 pPREY2CEP1  38
-0.0025 4e-04 1e-04 0.00016 0 0 0 0 0 1e-04 0 0 0 0 0 0 0 0.04 0 0 0 0 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0 0
+0.0025 4e-04 1e-04 0.00016 0 0 0 0 0 1e-04 0 0 0 0 0 0 0 0.01 0 0 0 0 0 0 0 0 0 0.001 0 0 0 0 0 0 0 0 0 0
 pPREY1CEP2  38
-0.001 1e-04 0.001 5e-04 0 0 0 0 0 0.00025 0 0 0 0 0 0 0 0.03 0 0 0 0 0 0 0 0 0 0.008 0 0 0 0 0 0 0 0 0 0
+0.001 1e-04 0.001 5e-04 0 0 0 0 0 0.00025 0 0 0 0 0 0 0 0.007 0 0 0 0 0 0 0 0 0 8e-04 0 0 0 0 0 0 0 0 0 0
 pPREY2CEP2  38
-0.015 1e-04 0.001 5e-04 0 0 0 0 0 0.00025 0 0 0 0 0 0 0 0.03 0 0 0 0 0 0 0 0 0 0.008 0 0 0 0 0 0 0 0 0 0
+0.015 1e-04 0.001 5e-04 0 0 0 0 0 0.00025 0 0 0 0 0 0 0 0.007 0 0 0 0 0 0 0 0 0 8e-04 0 0 0 0 0 0 0 0 0 0
 pPREY1PWN1  38
 0 0 0 0 0 0 0 0 0 0 0.005 0.005 0.005 0.005 0 0.005 0 0.07 0.005 0 0 0 0.005 0 0.4 0 0.2 0.05 0 0 0 0.001 0.1 0.01 0.05 0.05 0 0
 pPREY2PWN1  38
@@ -3376,6 +3376,7 @@ pPREY1PWN2  38
 0 0 0 0 0 0 0 0 0 0 0.005 0.005 0.005 0.005 0 0.005 0 0.07 0.005 0 0 0 0.005 0 0.18 0 0.09 0.05 0 0 0 0.001 0.1 0.01 0.05 0.05 0 0
 pPREY2PWN2  38
 0 0 0 0 0 0 0 0 0 0 0.005 0.005 0.005 0.005 0 0.005 0 0.07 0.005 0 0 0 0.005 0 0.18 0 0.09 0.05 0 0 0 0.001 0.1 0.01 0.05 0.05 0 0
+
 
 ## Ontogenetic diet preferences - one entry per age class. 1=use explicit interactions above, 0=use ontogenetic values below .
 # For each group where the p_split value is set to 0 there will be a value for each cohort of the groups tagged below as age_structured_pred.
@@ -3799,7 +3800,7 @@ mum_jCEP_T15   	 0.0005  Growth rate of juvenile cephalopods (from AMS was 0.05 
 # Vertebrate growth rates for each group, per age class mg N d-1
 
 mum_FPS          10
-0.003 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5
+0.05 8.33 8.33 10 10 10 10 10 10 10
 
 mum_FVS 10
 150 150 150 250 250 250 250 250 250 250
@@ -4055,7 +4056,7 @@ E_BG  0.5  Assimilation efficiency of benthic grazer 0.5
 E_BMS  0.5  Assimilation efficiency of shallow macrozoobenthos 0.5
 E_BMD  0.5  Assimilation efficiency of deeo macrozoobenthos 0.5
 E_BML  0.5  Assimilation efficiency of megazoobenthos 0.5
-E_CEP  0.4  Assimilation efficiency of cephalopods 0.25 - 0.5
+E_CEP  0.7  Assimilation efficiency of cephalopods 0.25 - 0.5
 E_PWN  0.5  Assimilation efficiency of prawns 0.5
 
 # Assimilation efficiency of invertebrate consumers on plants
@@ -4252,7 +4253,7 @@ WHT_mL 2
 
 #Linear mortality rate of cephalopods, 15 deg C    d-1 (0.002)      0.0 - 0.01
 CEP_mL 2
-0.00001 0.0000001
+0.0005 0.000005
 
 PWN_mL 2
 0.00001 0.0000001
@@ -4260,23 +4261,23 @@ PWN_mL 2
 
 # Quadratic mortality
 # Invertebrates
-ZG_mQ        0.000005    Quad. mortality rate of gelatin. zoopl, 15 deg C  d-1 (0.00001)    0.0 - 0.01
-ZL_mQ        0.000001  Quad. mortality rate of large zoopl, 15 deg C     d-1              0.0 - 0.01
-ZM_mQ        0.0       Quad. mortality rate of meso-zoopl, 15 deg C      d-1              0.0 - 0.02
-ZS_mQ        0.0       Quad. mortality rate of microzoopl, 15 deg C      d-1              0.0 - 0.2
-BC_mQ        0.0000001  Quad. mortality rate of inf carniv, 15 deg C      d-1              0.0 - 0.00001
-BD_mQ        0.0000003   Quad. mortality rate of deposit feeder, 15 deg C  d-1              0.0
-BO_mQ        0.0       Quad. mortality rate of meiobenthos, 15 deg C     d-1              0.0
-BFS_mQ       1.0e-7    Quad. mortality rate of shallow ff, 15 deg C      d-1              0.0 - 0.000002
-BFF_mQ       1.0e-7    Quad. mortality rate of other ff, 15 deg C        d-1              0.0 - 0.000002
-BMS_mQ       0.0000001  Quad. mort. rate of shallow macrozooben, 15 deg C d-1              0.0 - 0.000002
-BML_mQ       0.0000001  Quad. mortality rate of megazoobenthos, 15 deg C  d-1              0.0 - 0.000002
-BMD_mQ       0.0000001 Quad. mort. rate of deep macrozooben., 15 deg C   d-1              0.0 - 0.000002
-BG_mQ        0.0       Quad. mortality rate of benthic grazer, 15 deg C  d-1              0.0
+ZG_mQ        0.000005		# Quad. mortality rate of gelatin. zoopl, 15 deg C  d-1 (0.00001)    0.0 - 0.01
+ZL_mQ        0.000001  		# Quad. mortality rate of large zoopl, 15 deg C     d-1              0.0 - 0.01
+ZM_mQ        0.0       		# Quad. mortality rate of meso-zoopl, 15 deg C      d-1              0.0 - 0.02
+ZS_mQ        0.0       		# Quad. mortality rate of microzoopl, 15 deg C      d-1              0.0 - 0.2
+BC_mQ        0.0000001  	# Quad. mortality rate of inf carniv, 15 deg C      d-1              0.0 - 0.00001
+BD_mQ        0.0000003   	# Quad. mortality rate of deposit feeder, 15 deg C  d-1              0.0
+BO_mQ        0.0       		# Quad. mortality rate of meiobenthos, 15 deg C     d-1              0.0
+BFS_mQ       1.0e-7    		# Quad. mortality rate of shallow ff, 15 deg C      d-1              0.0 - 0.000002
+BFF_mQ       1.0e-7    		# Quad. mortality rate of other ff, 15 deg C        d-1              0.0 - 0.000002
+BMS_mQ       0.0000001  	# Quad. mort. rate of shallow macrozooben, 15 deg C d-1              0.0 - 0.000002
+BML_mQ       0.0000001  	# Quad. mortality rate of megazoobenthos, 15 deg C  d-1              0.0 - 0.000002
+BMD_mQ       0.0000001 		# Quad. mort. rate of deep macrozooben., 15 deg C   d-1              0.0 - 0.000002
+BG_mQ        0.0       		# Quad. mortality rate of benthic grazer, 15 deg C  d-1              0.0
 
 
 CEP_mQ 2
-1.0e-10 1.0e-10
+1.0e-9 1.0e-9
 
 PWN_mQ 2
 1.0e-10 1.0e-10
@@ -4840,7 +4841,7 @@ KDENR_WHT       1
 
 #Average biomass of new cephalopod recruits arriving mg N m-3 0.01
 KDENR_CEP 1
-0.002
+0.001
 #
 #KDENR_PWN 1
 #0.01
@@ -4889,7 +4890,7 @@ Rbeta_CEP       2.00E+12  Beta in Ricker for cephalopods
 Rbeta_PWN       2.00E+12  Beta in Ricker for prawns
 
 # Beverton-Holt recruitment
-BHalpha_FPS      3.00E+10  ## Alpha in Beverton-Holt for small planktivores
+BHalpha_FPS      5.568782e+12  ## Alpha in Beverton-Holt for small planktivores
 BHalpha_FVS      2.0E+11   ## Alpha in Beverton-Holt for shallow piscivores  (5.00E+09)
 BHalpha_FVT      5.0E+10   ## Alpha in Beverton-Holt for tropical piscivores
 BHalpha_FDS      5.00E+09  ## Alpha in Beverton-Holt for shallow demersals
