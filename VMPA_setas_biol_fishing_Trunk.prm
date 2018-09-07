@@ -1327,7 +1327,7 @@ min_channel_depth 0.001  Minimum depth of estuarine channels
 
 ## Biological parameters
 # Primary producer growth
-mum_PL_T15  1.0  Maximum growth rate, large phytoplankton d-1 1 - 1.7
+mum_PL_T15  1.2  Maximum growth rate, large phytoplankton d-1 1 - 1.7
 mum_PS_T15  0.2  Maximum growth rate, small (pico) phytoplankton d-1 1 - 1.24
 mum_MA_T15  2.9  Maximum growth rate, macroalgae d-1 0.1
 mum_DF_T15  0.0001  Maximum growth rate, dinoflagellates d-1 0.3 - 0.8
@@ -3279,13 +3279,13 @@ pPREY2FVT2  38
 pPREY1FDS1  38
 0.05 0 0 0.025 0 0 0 0 0 0.001 1e-04 0.007 0.002 0.01137931 1.5e-05 0.01137931 0.05 0.3 0.05 1e-06 0 1e-07 0.007637931 0.001 0 0 0 0.0275 0 0 0 0 0.002 5e-04 1e-04 0 0 0
 pPREY1FPS1  38
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0 0 0 0 0 0 0.2 0 0 0.1 0 0 0 0 0.2 0.001 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0 0 0 0 0 0 0.1 0 0 0.1 0 0 0 0 0.05 0.001 0 0 0 0
 pPREY2FPS1  38
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0 0 0 0 0 0 0.2 0 0 0.1 0 0 0 0 0.2 0.001 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0 0 0 0 0 0 0.1 0 0 0.1 0 0 0 0 0.05 0.001 0 0 0 0
 pPREY1FPS2  38
-0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0.2 0 0 0 0 0 0 0.2 0.003 0 0.1 0 0 0 0 0.2 0.001 0 0 0 0
+0.001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0.2 0 0 0 0 0 0 0.07 0.003 0 0.1 0 0 0 0 0.05 0.001 0 0 0 0
 pPREY2FPS2  38
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0.2 0 0 0 0 0 0 0.2 0.003 0 0.1 0 0 0 0 0.2 0.001 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0.2 0 0 0 0 0 0 0.07 0.003 0 0.1 0 0 0 0 0.05 0.001 0 0 0 0
 pPREY2FDS1  38
 5e-04 0 0 0.005 0 0 0 0 0 0.001 1e-04 0.007 0.002 0.01137931 1.5e-05 0.01137931 0.05 0.3 0.05 1e-06 0 1e-07 0.007637931 0.001 0 0 0 0.0275 0 0 0 0 0.002 5e-04 1e-04 0 0 0
 pPREY1FDS2  38
@@ -3369,13 +3369,13 @@ pPREY1CEP2  38
 pPREY2CEP2  38
 0.015 1e-04 0.001 5e-04 0 0 0 0 0 0.00025 0 0 0 0 0 0 0 0.007 0 0 0 0 0 0 0 0 0 8e-04 0 0 0 0 0 0 0 0 0 0
 pPREY1PWN1  38
-0 0 0 0 0 0 0 0 0 0 0.005 0.005 0.005 0.005 0 0.005 0 0.07 0.005 0 0 0 0.005 0 0.4 0 0.2 0.05 0 0 0 0.001 0.1 0.01 0.05 0.05 0 0
+0 0 0 0 0 0 0 0 0 0 0.005 0.005 0.005 0.005 0 0.005 0 0.07 0.005 0 0 0 0.005 0 0 0 0.2 0.05 0 0 0 0.001 0.1 0.01 0.05 0.05 0 0
 pPREY2PWN1  38
-0 0 0 0 0 0 0 0 0 0 0.005 0.005 0.005 0.005 0 0.005 0 0.07 0.005 0 0 0 0.005 0 0.4 0 0.2 0.05 0 0 0 0.001 0.1 0.01 0.05 0.05 0 0
+0 0 0 0 0 0 0 0 0 0 0.005 0.005 0.005 0.005 0 0.005 0 0.07 0.005 0 0 0 0.005 0 0 0 0.2 0.05 0 0 0 0.001 0.1 0.01 0.05 0.05 0 0
 pPREY1PWN2  38
-0 0 0 0 0 0 0 0 0 0 0.005 0.005 0.005 0.005 0 0.005 0 0.07 0.005 0 0 0 0.005 0 0.18 0 0.09 0.05 0 0 0 0.001 0.1 0.01 0.05 0.05 0 0
+0 0 0 0 0 0 0 0 0 0 0.005 0.005 0.005 0.005 0 0.005 0 0.07 0.005 0 0 0 0.005 0 0 0 0.09 0.05 0 0 0 0.001 0.1 0.01 0.05 0.05 0 0
 pPREY2PWN2  38
-0 0 0 0 0 0 0 0 0 0 0.005 0.005 0.005 0.005 0 0.005 0 0.07 0.005 0 0 0 0.005 0 0.18 0 0.09 0.05 0 0 0 0.001 0.1 0.01 0.05 0.05 0 0
+0 0 0 0 0 0 0 0 0 0 0.005 0.005 0.005 0.005 0 0.005 0 0.07 0.005 0 0 0 0.005 0 0 0 0.09 0.05 0 0 0 0.001 0.1 0.01 0.05 0.05 0 0
 
 
 ## Ontogenetic diet preferences - one entry per age class. 1=use explicit interactions above, 0=use ontogenetic values below .
@@ -3800,7 +3800,7 @@ mum_jCEP_T15   	 0.0005  Growth rate of juvenile cephalopods (from AMS was 0.05 
 # Vertebrate growth rates for each group, per age class mg N d-1
 
 mum_FPS          10
-0.05 8.33 8.33 10 10 10 10 10 10 10
+0.125 33.32 41.65 100 100 100 100 100 100 100
 
 mum_FVS 10
 150 150 150 250 250 250 250 250 250 250
@@ -4128,7 +4128,7 @@ EDR_BMS 0  Assim efficiency of shallow macrozoobenthos on refractory det. 0 - 0.
 EDR_BG  0  Assim efficiency of benthic grazers on refractory detritus 0 - 0.1
 
 # Assimilation efficiencies of vertebrate consumers
-E_FPS 0.3  Assimilation efficiency of small planktivores 0.08 - 0.55
+E_FPS 0.45  Assimilation efficiency of small planktivores 0.08 - 0.55
 E_FVS 0.5  Assimilation efficiency of shallow piscivores 0.08 - 0.55
 E_FVT 0.5  Assimilation efficiency of tropical piscivores 0.08 - 0.55
 E_FDS 0.2  Assimilation efficiency of shallow demersals 0.06 - 0.5
@@ -4138,7 +4138,7 @@ E_PIN 0.35  Assimilation efficiency of pinnipeds 0.07 - 0.5
 E_WHB 0.35  Assimilation efficiency of baleen whales 0.07 - 0.5
 E_WHT 0.45  Assimilation efficiency of toothed whales 0.07 - 0.5
 
-EPlant_FPS 0.05 Assimilation efficiency of small planktivores on plants 0.001 - 0.1
+EPlant_FPS 0.1 Assimilation efficiency of small planktivores on plants 0.001 - 0.1
 EPlant_FVS 0  Assimilation efficiency of shallow piscivores on plants 0.001 - 0.1
 EPlant_FVT 0  Assimilation efficiency of tropical piscivores on plants 0.001 - 0.1
 EPlant_FDS 0.08 Assimilation efficiency of shallow demersals on plants 0.001 - 0.2
@@ -4148,7 +4148,7 @@ EPlant_PIN 0  Assimilation efficiency of pinnipeds on plants 0.001 - 0.2
 EPlant_WHB 0  Assimilation efficiency of baleen whales on plants 0.001 - 0.2
 EPlant_WHT 0  Assimilation efficiency of toothed whales on plants 0.001 - 0.2
 
-EDL_FPS 0  Assimilation efficiency of small planktivores on labile det. 0 - 0.1
+EDL_FPS 0.05  Assimilation efficiency of small planktivores on labile det. 0 - 0.1
 EDL_FVS 0  Assimilation efficiency of shallow piscivores on labile det. 0 - 0.1
 EDL_FVT 0  Assimilation efficiency of tropical piscivores on labile det. 0 - 0.1
 EDL_FDS 0.04  Assimilation efficiency of shallow demersals on labile det. 0 - 0.2
@@ -4209,7 +4209,7 @@ KLYS_MA 1.0       Lysis rate of macroalgaes  d-1 (0.01)       0.01
 KLYS_SG 1.0       Lysis rate of seagrass     d-1 (0.01)       0.01
 
 # Linear mortality
-PL_mL        0.00002       Linear mortality rate of lg phytopl, 15 deg C     d-1              0.14
+PL_mL        0.000015       Linear mortality rate of lg phytopl, 15 deg C     d-1              0.14
 PS_mL        0.00001       Linear mortality rate of picophytopl, 15 deg C    d-1              0.14
 MB_mL        0.0       Linear mortality rate of microphytoben, 15 deg C  d-1              0.14
 DF_mL        0.0       Linear mortality rate of dinoflag, 15 deg C       d-1              0.14
@@ -4261,7 +4261,7 @@ PWN_mL 2
 
 # Quadratic mortality
 # Invertebrates
-ZG_mQ        0.000005		# Quad. mortality rate of gelatin. zoopl, 15 deg C  d-1 (0.00001)    0.0 - 0.01
+ZG_mQ        0.000001		# Quad. mortality rate of gelatin. zoopl, 15 deg C  d-1 (0.00001)    0.0 - 0.01
 ZL_mQ        0.000001  		# Quad. mortality rate of large zoopl, 15 deg C     d-1              0.0 - 0.01
 ZM_mQ        0.0       		# Quad. mortality rate of meso-zoopl, 15 deg C      d-1              0.0 - 0.02
 ZS_mQ        0.0       		# Quad. mortality rate of microzoopl, 15 deg C      d-1              0.0 - 0.2
@@ -4283,7 +4283,7 @@ PWN_mQ 2
 1.0e-10 1.0e-10
 
 FPS_mQ 2
-1.00E-015 1.00E-013
+1.00E-010 1.00E-011
 FVS_mQ 2
 2.00E-016 1.00E-007
 FVT_mQ 2
