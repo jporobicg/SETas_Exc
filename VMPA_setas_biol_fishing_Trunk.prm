@@ -3737,8 +3737,8 @@ C_BMS_T15  0.003  Clearance rate of shallow macrozoobenthos mg3(mg N)-1 d-1 0.00
 C_BML_T15  0.016  Clearance rate of megazoobenthos mg3(mg N)-1 d-1 0.0002 - 0.004
 C_BMD_T15  0.004  Clearance rate of deep macrozoobenthos mg3(mg N)-1 d-1 0.0002 - 0.004
 C_BO_T15  0.01 Clearance rate of meiobenthos mg3(mg N)-1 d-1 0.001 - 0.05
-C_CEP_T15  0.0019  Clearance rate of cephalopods mg3(mg N)-1 d-1 0.1 - 0.2
-C_jCEP_T15  0.0015  Clearance rate of juvenile cephalopods mg3(mg N)-1d-1 0.1 - 0.2
+C_CEP_T15  0.0015  Clearance rate of cephalopods mg3(mg N)-1 d-1 0.1 - 0.2
+C_jCEP_T15  0.0011  Clearance rate of juvenile cephalopods mg3(mg N)-1d-1 0.1 - 0.2
 C_PWN_T15  0.01  Clearance rate of prawns mg3(mg N)-1d-1 0.0002 - 0.004
 C_jPWN_T15  0.007  Clearance rate of juvenile prawns mg3(mg N)-1d-1 0.0002 - 0.004
 
@@ -3792,8 +3792,8 @@ mum_BML_T15      0.016    Growth rate of megazoobenthos                     mg N
 mum_BO_T15       0.03      Growth rate of meiobenthos                        mg N d-1          0.3
 mum_PB_T15       1.2      Growth rate of pelagic bacteria                  mg N d-1       1.0 - 2.0
 mum_BB_T15       1.5      Growth rate of sediment bacteria                 mg N d-1       1.0 - 2.0
-mum_CEP_T15      0.0005   Growth rate of cephalopods (from AMS was 0.05 in NSW) mg N d-1 0.02 - 0.35
-mum_jCEP_T15   	 0.0005  Growth rate of juvenile cephalopods (from AMS was 0.05 in NSW) mg N d-1 0.02 - 0.35
+mum_CEP_T15      0.0001   Growth rate of cephalopods (from AMS was 0.05 in NSW) mg N d-1 0.02 - 0.35
+mum_jCEP_T15   	 0.0001  Growth rate of juvenile cephalopods (from AMS was 0.05 in NSW) mg N d-1 0.02 - 0.35
 #mum_PWN_T15   	 0.0000001 Growth rate of prawns (from AMS was 0.004 in NSW) mg N d-1 0.0015 - 0.015
 #mum_jPWN_T15  	 0.0000001  Growth rate of juvenile prawns (From AMS was 0.004 in NSW) mg N d-1 0.0015 - 0.015
 
