@@ -1,0 +1,34 @@
+\\n
+**  Input
+| Calibration | FG  | Paramter            | Change |                 Old value |                     newValue | Reason                                                                          |
+|-------------+-----+---------------------+--------+---------------------------+------------------------------+---------------------------------------------------------------------------------|
+|           1 | ZG  | Pprey               | Dec    |                     0.005 |                            0 | They where eating FPS                                                           |
+|           1 | FVS | Recruit-alpha       | Dec    |                      9e11 |                         2e11 | Eplosive recruitment                                                            |
+|           1 | FVS | Recruitment-Beta    | Dec    |                      1e10 |                          1e8 | Explosive recruitment                                                           |
+|           1 | FVT | Pprey (on Adult)    | Dec    |                      0.02 |                       0.0005 | The Cannibalis it was too high                                                  |
+|           1 | FVT | Pprey (on Juv)      | Dec    |                      0.02 |                        0.001 | The Cannibalis it was too high                                                  |
+|           1 | SHD | Ml                  | Inc    |       1.00E-008 1.00E-013 |          5.00E-008 1.00E-012 | Increasing background mortality                                                 |
+|           1 | SB  | Recruit             | Dec    |                        12 |                            3 | To much recruitment, this was compensated by ml                                 |
+|           1 | PIN | Ml                  | Inc    |       1.00E-008 5.00E-013 |          1.00E-008 5.00E-012 | Controling the polularion growth                                                |
+|           1 | WHT | Mq                  | Inc    |       1.00E-006 1.00E-005 |          5.00E-006 1.00E-005 | Controling the growth tof juveniles                                             |
+|           1 | CEP | MUM                 | Dec    |                     0.001 |                       0.0005 | Growing too fast                                                                |
+|           1 | FPS | Recruit (Alpha)     | Inc    |                       2e9 |                 5.568782e+12 | To few larvaes wich means almost none recruit after mortality                   |
+|           1 | SHD | MQ                  | Inc    |   1.20E-010     1.00E-008 |          1.20E-010 1.00E-006 | Growing to fast,  it is necesary to add densodependent mortality                |
+|           1 | SHD | Recruit             | Dec    |                         1 |                          0.5 | More realistic value (2 individual every 2 years with two parents)              |
+|           1 | PIN | MQ                  | Iinc   |   1.50E-007     2.00E-007 |         5.0E-007   2.00E-005 | The densodependent mortality is to low                                          |
+|           1 | CEP | MQ                  | Inc    |           1.0e-10 1.0e-10 |                1.0e-9 1.0e-9 | The densodependent mortality is to low                                          |
+|           1 | CEP | Efficiency          | Inc    |                       0.4 |                          0.7 | It was too low,  need to be encreased                                           |
+|           1 | CEP | Pprey      ZL       | Dec    |     0.03 (Adl) 0.04 (Juv) | 0.007 (Adl) and 0.0008 (Juv) | Values where to high                                                            |
+|           1 | CEP | Pprey on ZM         | Dec    |    0.01 (Adl) 0.008 (Juv) | 0.001 (Adl) and 0.0008 (Juv) | Values where to high                                                            |
+|           1 | CEP | Ml                  | Dec    |         0.00001 0.0000001 |              0.0005 0.000005 |                                                                                 |
+|           1 | FPS | Mum                 | Inc    | Double the inicital value |                              | The total reserve and structural weight drops almost the half during simulation |
+|           2 | FPS | Mum                 | Inc    |                    Triple |                              | The total RN and SN is too low, is a strong constrain to reproduction           |
+|           2 | FPS | pprey               | Dec    |                       0.2 |                         0.05 | The value is to high. is eating too much detritus                               |
+|           2 | ZG  | MQ                  | Dec    |                  0.000005 |                     0.000001 | The constrain is to high                                                        |
+|           2 | FPS | MQ                  | INC    |       1.00E-015 1.00E-013 |          1.00E-010 1.00E-011 | The population grwth too fast                                                   |
+|           2 | FPS | pprey               | Dec    |                   0.2 0.2 |                     0.1 0.15 | The predation preasure was to high on PL                                        |
+|           2 | FPS | Efficiency (E_)     | Inc    |                       0.3 |                         0.45 | Need to increase the amount of N taken from                                     |
+|           2 | FPS | Efficiency (EPlant) | Inc    |                      0.05 |                          0.1 | It was too low                                                                  |
+|           2 | FPS | Efficiency (EDL_)   | Inc    |                         0 |                         0.05 | They have DL part of the diet but eficiency was 0                               |
+|           2 | PL  | Mum                 | Inc    |                         1 |                          1.2 | I need to increase the growth                                                   |
+|           2 | PL  | mL                  | Dec    |                  0.000002 |                    0.0000015 | I need to increase the survival                                                 |
