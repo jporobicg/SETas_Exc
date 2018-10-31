@@ -8,5 +8,5 @@
 #/Inputs/Forcings/*
 #/MandM/FG_connect.nc
 /.vcn/*
-/*.R
-/*.org
+*.R
+*.org
